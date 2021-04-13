@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block icerik%}
+<div class="jumbotron">
+
+
+<div >
+<h1 style = "margin:0 auto;margin-left: 750px;color:DodgerBlue">{{post.baslık}}</h1>
+    <br>
+    <h6 style = "margin:0 auto;margin-left: 750px;color:red;">{{post.created_date}}</h6>
+    <br>
+    <h2>
+        {{post.noticerik|safe}}
+    </h2>
+    <br>
+    <p>
+        {{post.updated_date|timesince}}
+    </p>
+    <br>
+    {%if request.user.is_authenticated%}
+        <p><a class="btn btn-danger" href="{% url 'delete' post.pk%}">Sil</a></p>
+    {%endif%}
+    <hr style="width:825px;margin-left:-15px;float:right;float:left;margin-right:10px;">
+</div>
+</div>
+</div>
+
+{%endblock%}

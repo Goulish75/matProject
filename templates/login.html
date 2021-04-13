@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+{%load static%}
+<html lang="tr">
+{%block icerik%}
+<body>
+<link rel="stylesheet" href="{%static 'css/kayıtol.css'%}">
+        <form method="post" action="{%url 'girisYap'%}">
+            <div class="login-wrap" style="margin-top:200px;">
+                <div class="login-html">
+                    <h1>Giriş Yap</h1>
+                    <br>
+                    <br>
+                {%csrf_token%}
+                {%for field in form%}
+                {{field.label_tag}}
+                {{field}}
+                    <br>
+                    <br>
+            {%endfor%}
+                    <br>
+                     <button class="btn" style="background-color:#1161ee"> Giriş Yap</button>
+                    </div>
+                </div>
+            <br>
+
+        </form>
+    </div>
+</body>
+{%endblock%}
+</html>

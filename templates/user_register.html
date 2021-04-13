@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block icerik%}
+
+<link rel="stylesheet" href="{%static 'css/kayıtol.css'%}">
+		<form action="kayıtol" method="post">
+			 <div class="login-wrap" style="margin-top:200px;">
+                <div class="login-html">
+					<h1>Kayıt Ol</h1>
+					<br>
+
+			{%csrf_token%}
+		{%for field in form%}
+		<div class="group">
+			<label for="pass" class="label">{{field.label_tag}}</label>
+
+
+			{{field}}
+
+
+
+
+
+		</div>
+
+
+					<br>
+		{%if field.errors%}
+			{{field.errors}}
+		{%endif%}
+	{%endfor%}
+		<br>
+		<div class="group">
+
+			<button class="btn" style="background-color:#1161ee">Kayıt Ol</button>
+
+		</div>
+
+		</div>
+				</div>
+		</form>
+{%endblock%}
+</div>

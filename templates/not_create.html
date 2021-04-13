@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+<html lang="en">
+
+<body>
+    {%block icerik%}
+    <br>
+    <br>
+    <h1 style="margin: 0 auto;margin-top:25px;margin-left:615px">Not Oluştur</h1>
+    <hr>
+
+    <form action="olustu" method="post" enctype="multipart/form-data">
+        <div style="margin:0 auto;width:900px;margin-top:50px;" class="jumbotron">
+
+        {% csrf_token %}
+        {{form.media}}
+        {{form.Text_areas_name}}
+        {% for field in form %}
+        {{field.label_tag}}
+        {{field}}
+        <br>
+        <br>
+        {% endfor %}
+            <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Oluştur</button>
+            </div>
+    {%endblock%}
+
+</body>
+</html>

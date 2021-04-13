@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>asDFLKASDFMFGFDLKŞSŞ</title>
+</head>
+<body>
+    {%block icerik%}
+    <div class="jumbotron" style="margin-top: 35px;">
+  <h1 class="display-4">Mantık</h1>
+
+  <hr class="my-4">
+  <h3>Mantık ya da eseme, bilginin yapısını inceleyen, doğru ile yanlış arasındaki akıl yürütmenin ayrımını yapan disiplindir, doğru düşüncenin aletidir. Önceleri bir felsefe dalıyken daha sonra kendi başına bir ihtisas alanı olmuştur. Matematik ve bilgisayar biliminin de parçası haline gelmiştir. Bir disiplin olarak Aristoteles tarafından kurulmuştur. Aristoteles'den etkilenen Farabi tarafından iki kısımda kategorize edilmiştir. (düşünce ve sonuç) İbn-i Sina geçicilik ve içerme arasındaki ilişkiyi geliştirmiştir. Çağdaş zamanlarda Frege, Russell ve Wittgenstein önemli katkılar yapmıştır.</h3>
+  <p class="lead">
+    <a style="margin-top:15px;" class="btn btn-primary btn-lg" href="not_list" role="button">Daha Fazla Bilgi Edin</a>
+  </p>
+</div>
+    <div class="jumbotron">
+  <h1  class="display-4">Mantık Uygulaması</h1>
+
+  <hr class="my-4">
+  <h3>Basit bir örnek vermek gerekirse: Eğer bütün insanlar memeli ise, ve Aristoteles insan ise, Aristoteles de memelidir.
+
+Bu örnek mantık sembolleriyle şöyle gösterilebilir:</h3>
+
+        <h3 style="color:red;margin-left:10px;">[(insan => memeli ) ∧ (Aristoles => insan)] => (Aristoles => memeli )</h3>
+
+        <h3>veya; bu örnek daha genel olarak şöyle ifade edilebilir: bu</h3>
+
+        <h3 style="color:red;margin-left:10px;">[(a => b ) ∧ (c => a)] => (c => b )</h3>
+
+        <h3>az bulunanlar değerlidir, zümrüt az bulunur. Demek ki zümrüt de değerlidir</h3>
+        <br>
+        <h3>Mantık, doğru düşünmenin kurallarını inceleyen felsefi bir disiplindir. Bu açıdan mantık, bilginin doğruluğunu değil, bilginin doğruluğunu ifade eden düşünce ve kavramların kendi içsel bütünlüğünün doğruluğunu inceler. Böylece mantıken doğru olan bilgi ve bilim manasında yanlış olabilir. Akıl yürütme biçimleri usavurma yöntemleridir.</h3>
+        <br>
+        <ul>
+            <li style="font-size:30px;">
+                <h3>Bir genel öncülden özele veya tikele varma tümden gelimdir:</h3>
+
+            </li>
+                <h3 style="color:red">Dedüksiyon,</h3>
+                <h3>Bütün memeliler çok hücrelidir,</h3>
+                <h3>İnsan bir memelidir,</h3>
+                <h3>O zaman insan çok hücrelidir.</h3>
+        </ul>
+        <ul>
+            <li style="font-size: 30px;">
+                <h3>Bir özel öncülden genele gitme tümevarımdır. <span style="color:red">(Endüksiyon)</span></h3>
+            </li>
+            <h3>Nokia cep telefonu kanser yapar,</h3>
+            <h3>Samsungcep telefonu kanser yapar,</h3>
+            <h3>Motorola cep telefonu kanser yapar,</h3>
+            <h3>O zaman tüm cep telefonları kanser yapar.</h3>
+
+        </ul>
+        <ul>
+            <li style="font-size:30px;">
+                <h3><span style="color:red;">Analoji</span> ise benzeştirmedir. Bunda da aynı niteliklere sahip nesnelerin tanımlanmasında benzeşme yoluyla bir tür "sıçratma" uygulanır.</h3>
+            </li>
+            <h3>Yunanistan ve Türkiye aynı enlemdedir,</h3>
+            <h3>Yunanistan'da yazlar sıcak geçer,</h3>
+            <h3>O halde  Türkiye'de de yazlar sıcak geçer.</h3>
+        </ul>
+        <p class="lead">
+    <a style="margin-top:15px;" class="btn btn-primary btn-lg" href="not_list" role="button">Daha Fazla Bilgi Edin</a>
+  </p>
+</div>
+        <div class="jumbotron">
+  <h1 class="display-4">Mantık İlkeleri</h1>
+
+  <hr class="my-4">
+  <h2 style="color:red">
+   Özdeşlik
+ </h2>
+            <h3 >Mantık ilkesi, "Bir şey ne ise odur" ifadesinde mana bulur. Bir akıl yürütmede her kavram ve önerme kendisiyle aynı manada olmalıdır.</h3>
+            <hr>
+            <br>
+            <h2 style="color:red">Çelişmezlik</h2>
+            <h3>Bir şeyin hem kendisi hem de başkası olamayacağını ifade eden kuraldır. Aynı özdeşlik ilkesi gibi kavram veya önermeler kendisiyle çelişmemektedir.</h3>
+                        <hr>
+            <br>
+            <h2 style="color:red">Üçüncü durumun olanaksızlığı</h2>
+
+            <h3>Bu ilke, bir önermenin ya doğru ya yanlış olacağını ifade eder. Bu mantığa göre bir önerme hem doğru hem yanlış olamaz.</h3>
+
+            <br>
+            <h3>Temel matematikteki küme kavramı bu ilkeleri belli ölçülerde tartışmaya açar. Zira bir nesneye ait olan nitelik farklı nesnelere ait olabilir. Bunu da sağlayan aslında benzeşim özelliğidir. İnsan bir canlıdır ancak canlı olmayan şeylerden de oluşmuştur. O halde insan hem canlıdır hem de canlı değildir. Bu ilkelerde sorun iki değerli mantık yerine çok değerli mantığın gelişmesine sebebiyet vermiştir. Doğru ve yanlış yerine "belirsiz" tanımının eklenmesine yol açmıştır. Bu ilkeye göre her yargının doğruluğu için bir başka yargı gereklidir. Yeterli sebep olmadıkça bir yargının doğruluğundan söz edilemez. Tüm ilkelere bakınca modern usavurmada yetersiz kaldıkları görülebilir. Bu da bizi kuantum fiziğinin de oluşmasında yardımcı olduğu yeni kurallara götürebilir. Kuantum deneylemelerinde bir kedi hem ölü hem diri olabilir. Yani hem o, hem diğeridir.[1]</h3>
+  <p class="lead">
+    <a style="margin-top:15px;" class="btn btn-primary btn-lg" href="not_list" role="button">Daha Fazla Bilgi Edin</a>
+  </p>
+</div>
+            <div class="jumbotron">
+  <h1 class="display-4">Mantığın Tarihçesi</h1>
+
+  <hr class="my-4">
+                <h3>Hint ve Çin felsefelerinde kavram belirleme teknikleri, Mezopotamya ve Mısır'da ölçme, sayma, sınıflandırma usulleriyle mevcuttu. Buralarda kimi aritmetik işlemler oldukça gelişmiş olmasına rağmen, matematik ve mantık sistemi kurulamamıştır.Bu nedenle mantık tarihi, genellikle logos kavramının ortaya çıktığı Yunanistan ve Ön Asya'dan başlatılır. Logos: söz, yasa, akıl, akıl ilkesi, tanrısal akıl, gibi pek çok anlam içeren ve doğu felsefesinden etkilenerek Yunan felsefecilerinde şekillenen merkezi bir kavramdır. İlk olarak Herakleitos bahsetmiştir. <span style="color:DodgerBlue">Thales</span> ve <span style="color:DodgerBlue">Platon</span> arası devirde diğer felsefeciler tarafından da tartışılmıştır. Bugün bildiğimiz anlamdaki mantık üzerine ilk bütünsel düşünme ve araştırmayı <span style="color:DodgerBlue;">Aristoteles</span> yapmıştır. Mantık üzerine altı kitap yazmış ve bu kitaplar o öldükten sonra Organon başlığı altında toplanmıştır. Bunlara, Kategoriler, Önermeler, Birinci Analitikler, İkinci Analitikler, Topikler, Sofistik Kanıtlar, daha sonra da <span style="color:DodgerBlue">Poetika</span>, <span style="color:DodgerBlue">Retorik</span> ve <span style="color:DodgerBlue">Porfiryos’un</span> İsagoji’si de eklenmiştir. Organon, Porfiryos tarafından sadeleştirilmiş, M.S. 6'da, Boetyus tarafından Latinceye çevrilmiştir. Ortaçağ boyunca Aristo’nun öncülük ettiği Skolastik düşünce hakimiyetini sürdürmüştür.</h3>
+                <br>
+                <h3><span style="color:DodgerBlue">F. Bacon</span>, tümevarım mantığını içeren deneysel yöntemin geçerli olduğunu göstermiştir. <span style="color:DodgerBlue">Descartes</span> ve <span style="color:DodgerBlue">Ramus</span> gibi düşünürler bilimcil yöntem konusunu Yeni Çağ’da ön plana çıkarmıştır.</h3>
+                <br>
+                <h3>Sembolik mantık üzerine ilk sistemli çalışma <span style="color:DodgerBlue">Leibniz</span> tarafından yapılmıştır. <span style="color:DodgerBlue">De Morgan</span> sembollerle ifade edilebilecek bir mantık üzerine çalışmıştır. <span style="color:DodgerBlue">G. Boole</span> gibi matematikçiler mantığın matematikleştirilmesine çalışırken,G. Frege bugünkü önermeler ve niceleme mantığını kurmuştur. Sembolik mantığın en önemli klasiklerinden biri <span style="color:DodgerBlue">B. Russel</span> ve <span style="color:DodgerBlue">N. Whitehead</span>'ın birlikte yazdığı Matematiğin İlkeleri kitabıdır. Günümüzde lojik adı verilen sembolik mantık büyük ölçüde bu kitaba dayanmaktadır. <span style="color:DodgerBlue">Lukasiewic</span> üç değerli mantık sistemi geliştirmiş, <span style="color:DodgerBlue">Reicheinbach</span> olasılık mantığı adıyla sonsuz doğruluk değerli mantık sistemini kurmuştur.</h3>
+                <p class="lead">
+    <a style="margin-top:15px;" class="btn btn-primary btn-lg" href="not_list" role="button">Daha Fazla Bilgi Edin</a>
+  </p>
+</div>
+    <br>
+    <br>
+                <hr>
+                <br>
+                <br>
+    <div class="jumbotron" style="margin-top: 35px;">
+  <h1 class="display-4">Matematiksel Mantık</h1>
+
+  <hr class="my-4">
+  <h3>Matematiksel mantık biçimsel mantığın matematiğe uygulanmasıyla ilgilenen bir matematik dalıdır. Metamatematik, matematiğin temelleri ve kuramsal bilgisayar bilimi alanlarıyla yakınlık gösterir.[1] Matematiksel mantığın temel konuları biçimsel sistemlerin ifade gücünün ve biçimsel ispat sistemlerinin tümdengelim gücünün belirlenmesidir.</h3>
+        <br>
+        <h3>Matematiksel mantık kümeler kuramı, model kuramı, hesaplanabilirlik kuramı ve tanıtlama kuramı alanlarına ayrılır. Bu alanlar mantığın, özellikle birinci-derece mantık ve tanımlanabilir küme konularındaki, temel sonuçlarını paylaşır.</h3>
+        <p class="lead">
+    <a style="margin-top:15px;" class="btn btn-primary btn-lg" href="not_list" role="button">Daha Fazla Bilgi Edin</a>
+  </p>
+</div>
+    <div class="jumbotron" style="margin-top: 35px;">
+<h1 class="display-4">Tarihçe</h1>
+
+  <hr class="my-4">
+  <h3>Çağdaş mantığın ve çağdaş felsefenin kurucusu Alman mantıkçısı Gottlob Frege, "Matematik mantığın uygulama alanıdır." görüşünden hareketle matematiğin, mantığın aksiyomatik sistemi üzerine kurulabileceğini düşünmüştür. Bu düşünceden hareket ederek aritmetiğin temelleri konusundaki felsefi çalışmaları için bir mantık sistemi geliştirmişti.</h3>
+    <br>
+    <h3>Daha sonra, Frege'nin çalışmalarına dayanarak, Bertrand Russell ve Alfred North Whitehead 1910-1913 yılları arasında Principia Mathematica adını verdikleri eserde matematiği mantığa indirgeyerek formel bir sistem haline getirmeye çalıştılar. Fakat matematiğin formel hale getirilemeyeceğini Kurt Gödel 1933'te yayınladığı bir kitabındaki (Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme) meşhur teoremiyle gösterdi.</h3>
+    <br>
+    <h3>
+        John Alan Robinson, 1967'de çözülüm teorem ispatlama yöntemini geliştirdi. Bu yöntem 1972'de A. Colmaurer tarafından ilk mantık programlama dilinin (Prolog) geliştirilmesine yol açtı. Bu dil 1975'te D. Warren tarafından “Warren Abstract Machine” (WAM) olarak uygulandı. Kişisel bilgisayarlar üzerinde ilk uygulamalar 1980'lerde ortaya çıktı
+    </h3>
+    <p class="lead">
+    <a style="margin-top:15px;" class="btn btn-primary btn-lg" href="not_list" role="button">Daha Fazla Bilgi Edin</a>
+  </p>
+</div>
+    <div class="jumbotron" style="margin-top: 35px;">
+<h1 class="display-4">Önermeler Mantığı</h1>
+
+  <hr class="my-4">
+    <h3>Formel sistemler şu elemanlardan meydana gelir:</h3>
+        <h3 style="margin-left: 35px;">1. Tanımlanmamış terimler</h3>
+        <h3 style="margin-left: 35px;">2. Tanımlar</h3>
+        <h3 style="margin-left: 35px;">3. Türetme kuralları</h3>
+        <h3 style="margin-left: 35px;">4. Aksiyomlar</h3>
+        <h3 style="margin-left: 35px;">5. Teoremler</h3>
+        <h3>Formel mantığın tanımlanmamış terimleri olarak, basit önerme (P) ve mantık bağlaçları (değil, ve, veya, eğer-ise, eğer ve ancak-ise) gösterilebilir.
+
+            Tanımlanan terimlere örnek olarak bileşik önerme kavramını gösterilebilir. Aslında yukarıda verilen mantıksal bağlaçlar bir tek mantıksal bağlaç yardımıyla tanımlanabilir.</h3>
+            <br>
+            <h2 style="color:red">Önerme</h2>
+            <h3>Aşağıdaki cümleler önermelere örnektir:</h3>
+            <h3>Dün hava güneşliydi. 3 asal sayıdır.</h3>
+            <h3>Duygu 21 yaşındadır.</h3>
+            <h3>Derya 21 yaşında değildir.</h3>
+            <h3>Bir gün 24 saattir.</h3>
+            <h3>Sıfır doğal sayıdır.</h3>
+            <h3>Mantıksal bağlaçlar kullanarak basit önermelerden başka önermeler kurulabilir, ki bunlara <span style="color:red;">“bileşik önermeler”</span> denir.Önerme matematikte kesin bir hüküm bildiren ifadelere denir.</h3>
+
+        <br>
+        <h2 style="color:red">Olumsuzu</h2>
+        <h3>Bir önerme “değil” eki ile karşıt ifadeye çevrilebilir; buna olumsuzunu alma denir.
+
+Bir hafta 7 gün'dür. Bir hafta 7 gün degildir. Olumsuz olacak harfin önüne - ifadesi eklenir.</h3>
+        <br>
+        <h2 style="color:red">Birleşim</h2>
+        <h3>İki veya daha fazla önermeden "ve,veya,ise" mantıksal bağlaçlarını kullanarak bileşik önermeler kurulabilir. Örnek olarak: “Bugün hava açık ve sıcak” cümlesini verebilir. Doğal dilde bazen “fakat” bağlacını da kullanıyoruz.
+
+'Örnek': “bugün gemiler 9'da veya 10'da sefer yapacak.”
+
+“arkadaşlarım sınıftadır veya arkadaşlarım bahçededir.”
+
+değili A' olarak gösterilir.</h3>
+        <br>
+        <h2 style="color:red;">Ayrılım</h2>
+        <h3>İki veya daha fazla basit önermeden “veya” (ya da) mantıksal bağını kullanarak bilesik önermeler kurulabilir.
+
+Örnek: “Bugün Arçelik veya Tedaş'tan ziyaretçiler gelecek.”</h3>
+        <br>
+        <h2 style="color:red">Şartlı cümle</h2>
+        <h3>Aynı şekilde, iki veya daha fazla sayıda önermeden (eğer-ise) bağını kullanarak şartlı önermeler kurulabilir.
+
+Örnek: “Eğer yağmur yağıyor ise, hava bulutludur.”
+
+Bazen “eğer-ise” bağı yerine doğal dilde “gerektirir” bağını da kullanabiliyoruz.
+
+Örnek: “Yağmurun yağıyor olması havanın bulutlu olmasını gerektirir.”</h3>
+        <br>
+        <h2 style="color:red">Ancak ve ancak</h2>
+
+        <h3>Yine, “eğer ve ancak-ise” bağını kullanarak birden fazla önermeden çift şartlı önermeler kurulabilir. Bu tür önermeler doğal dilde daha az kullanılmasına rağmen, fizik ve matematikte sık sık kullanılmaktadır.
+
+Örnek: “Eğer ve ancak çalışanlar ücretlerde aşırı artış talep ederlerse enflasyon düşmez.”
+
+Aynı cümle şu şekilde de ifade edilebilir: “Eğer, çalışanlar ücretlerde aşırı artış talep ederlerse enflasyon düşmez, ve eğer enflasyon düşmezse çalışanlar ücretlerde aşırı artış talep ederler.”
+
+Cebirde olduğu gibi, sembolik veya matematiksel mantıkta da, önermeler yerine önermesel değişkenler kullanılır (P, Q, R, S, T harfleri gibi).</h3>
+        <br>
+        <h2 style="color:red;">Mantıksal Bağlaçlar</h2>
+        <h3>Mantıksal bağlaçlar aşağıdaki sembollerle gösterilir:</h3>
+        <h3>~ Değil</h3>
+        <h3>Λ Ve</h3>
+        <h3>V Veya</h3>
+        <h3>⇒ eğer-ise</h3>
+        <h3>⇔ Ancak ve ancak</h3>
+    <p class="lead">
+    <a style="margin-top:15px;" class="btn btn-primary btn-lg" href="not_list" role="button">Daha Fazla Bilgi Edin</a>
+  </p>
+</div>
+    <div class="jumbotron" style="margin-top: 35px;">
+  <h1 class="display-4">Kaynak</h1>
+
+  <hr class="my-4">
+  <h3>Yararlandığım kaynaklar:</h3>
+        <ul>
+            <li style="font-size: 30px;">
+                Vikipedi
+            </li>
+        </ul>
+  <p class="lead">
+    <a style="margin-top:15px;" class="btn btn-primary btn-lg" href="https://tr.wikipedia.org/wiki/Mant%C4%B1k" role="button">Mantık Kaynak</a>
+  </p>
+        <p class="lead">
+    <a style="margin-top:15px;" class="btn btn-primary btn-lg" href="https://tr.wikipedia.org/wiki/Matematiksel_mant%C4%B1k" role="button">Matematiksel Mantık Kaynak</a>
+  </p>
+</div>
+    {%endblock%}
+</body>
+</html>
